@@ -1,0 +1,1 @@
+rm -f DENSITY ELPOT GEOMETRY GEOMETRY.xyz LATEST RESTART.1 OUTPUT *.e* *.o* *.po* *.pe* *~

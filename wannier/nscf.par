@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#=============================================
+#===  qsub directive lines start with #$  ====
+#=============================================
+
+# job name
+#$ -N pw_nscf
+
+# 'parallel environment' and num of nodes
+#$ -pe mpich~* 4
+
+# Amount of time to ask for
+#$ -l h_cpu=24:0:0
+
+# environment variables for the execution context
+#$ -v COMMD_PORT -V
+
+# request execution directory to be the current working directory
+#$ -cwd
+
+#===========================================
+#===  execution environment set by sge  ====
+#===========================================
+
+#   $NSLOTS             number of processes to be used by mpirun
+#   $TMPDIR/machines    list of machines to be used by mpirun
+
+#========================================
+#===  execution commands start here  ====
+#========================================
+
+echo "Got $NSLOTS slots."
+
+cat $TMPDIR/machines
+
+mpirun -np $NSLOTS -machinefile $TMPDIR/machines $HOME/bin/pw.x -input N.nscf > nscf.out

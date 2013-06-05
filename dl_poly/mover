@@ -1,0 +1,17 @@
+mkdir $1
+
+cp CONTROL $1
+cp CONFIG $1
+cp FIELD $1
+cp TABLE $1
+
+mv OUTPUT $1
+mv REVCON $1
+mv STATIS $1
+mv REVIVE $1
+mv RDFDAT $1
+mv ZDNDAT $1
+mv HISTORY $1
+mv *.dat $1
+mv *.tmp $1
+mv *.xyz $1

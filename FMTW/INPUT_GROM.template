@@ -1,0 +1,13 @@
+
+&begin
+  %sites
+    N NN    # name in FORCE_OUT  ; desire name in TABLE  
+&
+  %core
+   N  N  CORERADIUSINBOHR  #core radius in a.u.
+& 
+   %rcut
+    rcut = CUTOFFINANGSTROMS
+&
+  fit: table
+&end

@@ -1,0 +1,14 @@
+# cbn file created with chain_angles.py
+# a =   10.0
+# b =   10.0
+# c =   10.0
+# number_of_particles =        4
+# number_of_neighbors =        1
+#
+#
+#
+# units = bohr
+N  0.0  0.0  0.0  -1
+N  2.097596  1.625165  0.0  -1
+N  4.176295  0.0  0.0  -1
+N  6.14161  1.511781  0.9448631  -1

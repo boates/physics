@@ -1,0 +1,4 @@
+ &inputpp
+   outdir = './tmp/' ,
+   prefix = 'N' ,
+ /

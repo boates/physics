@@ -1,0 +1,2 @@
+rm -f *.e* *.o* *.pe* *.po* WANNIER_* WC_SPREAD PSI.*.cube RESTART.1 LATEST IONS+CENTERS.xyz OUTPUT
+

@@ -1,0 +1,44 @@
+&begin Input
+
+number Types  1             # number of atomic types
+ 'N'                     # number of atoms of each type 
+
+CELL \
+   # CELL [Bohr]   d.ddddd - any format
+
+path to potential  \        # path to trajectory files TRAJECTORYn[#], like TRAJECTORYn1,   TRAJECTORYn2, ....   
+"./"
+
+ 
+PERIODIC                   # if to use periodic boundary conditions
+THREE DIM                  # fit all three projections of reference forces
+ROTATE                     # this option is better to use (force matche local system of coordinate rotated -> X axis along reference force
+TEST FORCES NO
+
+write only    # write [all,only,ea]  [all]: write outputs for each steps (FORCE_OUT dir), [ea]  
+read H_xyz
+
+Solver pda 1.0d-4 1.0d-4   # subroutine to solve overdetermined eq.  and tolerance (in matrix and rifgt side). DO not use too small talerance (typicaly 1.0d-3 - 1.0d-5)
+
+AVERAGING OVER TRAJECT     # always use this option
+
+## four options below   
+
+SKIP \
+0                        # how much step to skip before force-match
+
+AVERAGE  IN\
+0                     # total number of configurations to raed from trajectory files 
+
+Steps in block \
+100                      # how many steps to use to build each overdetermined system 
+
+Stride \
+20                      # how much step skip within trajetcory block used to build overdetermined system 
+                        # actual number  of equations in the overdetermined system  is int(<Steps in block>/<Stride>)+1 
+
+Radial mesh                # Radial mesh for short ranged interaction
+N-N    0-:0.05
+end
+
+&end Input

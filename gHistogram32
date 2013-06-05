@@ -1,0 +1,28 @@
+#!/bin/tcsh
+
+set file=$1
+
+if (!(-e $1)) then
+   echo "Could not find file '" $1 "'"
+   exit(-1)
+endif
+
+set cmd="~/gnuplot.scr"
+cat > $cmd << END
+set xlabel 'distance A'
+set xrange [0:*]
+set yrange [0:*]
+set data style lines
+set nokey
+plot "$file" u 1:2, "$file" u 1:3, "$file" u 1:4, "$file" u 1:5, "$file" u 1:6, "$file" u 1:7, "$file" u 1:8, "$file" u 1:9, "$file" u 1:10, "$file" u 1:11, "$file" u 1:12, "$file" u 1:13, "$file" u 1:14, "$file" u 1:15, "$file" u 1:16, "$file" u 1:17, "$file" u 1:18, "$file" u 1:19, "$file" u 1:20, "$file" u 1:21,"$file" u 1:22,"$file" u 1:23,"$file" u 1:24,"$file" u 1:25,"$file" u 1:26,"$file" u 1:27,"$file" u 1:28,"$file" u 1:29, "$file" u 1:30, "$file" u 1:31,"$file" u 1:32
+pause -1 "Showing $file.\nPress enter to quit"
+set terminal png
+set output 'hist.png'
+plot "$file" u 1:2, "$file" u 1:3, "$file" u 1:4, "$file" u 1:5, "$file" u 1:6, "$file" u 1:7, "$file" u 1:8, "$file" u 1:9, "$file" u 1:10, "$file" u 1:11, "$file" u 1:12, "$file" u 1:13, "$file" u 1:14, "$file" u 1:15, "$file" u 1:16, "$file" u 1:17, "$file" u 1:18, "$file" u 1:19, "$file" u 1:20, "$file" u 1:21,"$file" u 1:22,"$file" u 1:23,"$file" u 1:24,"$file" u 1:25,"$file" u 1:26,"$file" u 1:27,"$file" u 1:28,"$file" u 1:29, "$file" u 1:30, "$file" u 1:31,"$file" u 1:32
+quit
+END
+
+
+gnuplot $cmd
+
+\rm $cmd

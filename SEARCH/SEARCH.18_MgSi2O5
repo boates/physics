@@ -1,0 +1,36 @@
+VOLUME = 1000.0   # Ang^3, initial guess for total volume of randomly generated cell
+MAXVOL = 1.50     # Max volume rescaling to fit atoms if necessary
+
+PRESSURE = 100.0  # GPa, optimization pressure
+
+ANGMIN = 89.0     # in degrees
+ANGMAX = 91.0     # Min and max limits for angles between lattice vectors
+
+ALATLIM = 1.0     # No lattice vector 4 times larger than another
+
+MINDIST = 0.7     # Ang, minimum distance between randomly placed atoms
+
+NCELLS = 100      # Number of cells to generate
+NTYPES = 3        # Number of different "units" (i.e. a molecule or atom)
+NUNITS = 18 36 90 # Number of each unit type
+
+NEWUNIT = Mg      # KWARG to define new unit, must be NTYPES of these
+ATOMS = 1         # Number of atoms in unit
+Mg 0.0 0.0 0.0    # typat x y z
+ENDUNIT           # KWARG to end definition of new unit
+NEWUNIT = Si      # Value of NEWUNIT is a comment or unit name
+ATOMS = 1         #
+Si 0.0 0.0 0.0    #
+ENDUNIT           #
+NEWUNIT = O       #
+ATOMS = 1         #
+O 0.0 0.0 0.0     #
+ENDUNIT           #
+
+# VASP related input
+NCOARSE = 3       # Number of coarse optimizations to run on each cell
+NSTEPCOARSE = 3   # Number of ionic steps in each coarse run
+NFINE = 4         # Number of fine optimizations to run on each cell
+NSTEPFINE = 20    # Max number of steps in each fine run
+
+POTCAR = ./POTCARS   # Filepath for VASP POTCAR file(s)

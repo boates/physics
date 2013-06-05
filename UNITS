@@ -1,0 +1,95 @@
+# List of useful unit conversions read by units.
+# For clarity, please put new conversions in respective
+# section, if a proper header isn't already present in
+# UNITS, either make one or put under MISCELLANEOUS.
+
+# ENERGY
+1 E_dl = 1.036427784E-04 eV
+1 K = 1.381E-23 J
+1 K = 8.617E-05 eV
+1 Ha = 27.2113845 eV
+1 Ha = 4.35974417E-18 J
+1 Ha = 2 Ry
+1 Ha = 627.509391 kcal/mol
+1 eV = 1.60217653387e-19 J
+1 eV = 1.6021765E-12 erg
+1 eV = 2.41796E+14 Hz
+1 eV = 8.0655E+03 cm^-1
+
+# DISTANCE
+1 bohr = 0.5291772108 ang
+1 ang = 1E-10 m
+1 nm = 10 ang
+1 m = 100 cm
+1 cm = 10 mm
+1 m = 1000 mm
+1 m = 1E+09 nm
+1 km = 1000 m
+
+# TIME
+1 ns = 1E-09 s
+1 ps = 1E-12 s
+1 fs = 1E-15 s
+1 min = 60 s
+1 hour = 60 min
+1 day = 24 hour
+1 week = 7 day
+1 year = 365 day
+1 hour = 3600 s
+1 year = 8760 hour
+1 year = 31536000 s
+
+# PRESSURE
+1 atm = 0.000101325 GPa
+1 GPa = 9869.23267 atm
+1 GPa = 9.86923267 katm
+1 atm = 1.01325 bar
+1 Pa = 1e-05 bar
+1 GPa = 10000 bar
+1 Pa = 0.0075006158 torr
+
+# MASS
+1 kg = 1000 g
+1 mol = 6.0221415E+24 atom
+
+# AREA
+1 m^2 = 1E+04 cm^2
+1 cm^2 = 100 mm^2
+1 bohr^2 = 0.28002852043006765 ang^2
+
+# VOLUME
+1 m^3 = 1E+30 ang^3
+1 nm^3 = 1E+03 ang^3
+1 m^3 = 1E+06 cm^3
+1 cm^3 = 1E+03 mm^3
+1 bohr^3 = 0.14818471138563402 ang^3
+1 km^3 = 1E+06 m^3
+
+# MISCELLANEOUS
+1 rad = 57.29578 deg
+1 brian = 1 awesome
+
+# TEST OF SEARCHING
+1 A = 2 B
+1 B = 2 C
+1 C = 2 D
+1 D = 2 E
+1 E = 2 F
+1 F = 2 G
+1 G = 2 H
+1 H = 2 I
+1 I = 2 L
+1 L = 2 M
+1 M = 2 N
+1 N = 2 O
+1 O = 2 P
+1 P = 2 Q
+1 Q = 0.00001 R
+1 R = 2 S
+1 S = 2 T
+1 T = 2 U
+1 U = 2 V
+1 V = 2 W
+1 W = 2 X
+1 X = 2 Y
+1 Y = 2 Z
