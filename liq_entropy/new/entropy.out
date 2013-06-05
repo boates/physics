@@ -1,0 +1,19 @@
+ name of VDOS.dat file in THz normalized to 3N:
+dos.dat
+ number of atoms:
+128
+ number of atoms of this species:
+128
+ volume in angstroms^3:
+686.460765138
+ temperature in K:
+4000
+ mass in amu:
+14.00674
+ fluidicity factor:
+0.312758999998550
+ Entropy per atom in k_B:   8.60146659850033     
+ Entropy per atom in eV/K:  7.412178149679641E-004
+ Entropy per atom in k_B: solid part   5.37808884414288     
+ Entropy per atom in k_B: gas part   3.22337775435744     
+ TS per atom in eV:   2.96519780860746     

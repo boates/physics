@@ -1,0 +1,10 @@
+ Enter frequency cut-off
+ Entropy per atom in k_B:    8.601469228950014     
+ Entropy per atom in k_B: solid part    5.378094936749460     
+ Entropy per atom in k_B: gas part    3.223374292200554     
+ -TS per atom in eV:   -2.965198715406735     
+ Enthalpy per atom in eV:    1.390174207220762     
+ Gibbs energy per atom in eV:   -1.575024508185972     
+ Internal energy (E_ave+K) per atom in eV:   -4.197832004714164     
+ P,G,H,E_ave,U_ave(E_ave+K),S, -TS
+   166.92202380    -1.57502451     1.39017421    -4.71492949    -4.19783200     8.60146923    -2.96519872
